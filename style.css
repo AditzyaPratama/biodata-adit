@@ -8,103 +8,61 @@ body {
   padding: 0;
 }
 
-h2,
-h3 {
-  color: #00a2c6;
-}
-
-footer {
-  padding: 20px;
-  color: white;
+header {
   background-color: #00a2c6;
-  text-align: center;
-  font-weight: bold;
-}
-
-nav a {
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
   color: white;
-}
-
-nav a:hover {
-  font-weight: bold;
-}
-
-.profile header {
-  text-align: center;
-}
-
-.featured-image {
-  width: 100%;
-  max-width: 500px; /* Ukuran maksimal gambar */
-  max-height: 300px;
-  object-fit: cover;
-  object-position: center;
-  margin: 0 auto; /* Tengahkan gambar */
-}
-
-.profile img {
-  max-width: 150px; /* Ukuran maksimal gambar profil */
-  width: 100%;
-  height: auto;
-  border-radius: 50%; /* Membulatkan gambar profil */
-  margin: 0 auto;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 20px;
 }
 
 .jumbotron {
-  font-size: 20px;
-  padding: 60px;
-  background-color: #00c8eb;
   text-align: center;
-  color: white;
-}
-
-nav li {
-  display: inline;
-  list-style-type: none;
-  margin-right: 20px;
+  padding: 20px;
 }
 
 nav {
-  background-color: #00a2c6;
-  padding: 5px;
-  position: sticky;
-  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #007799;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 20px;
-  overflow: auto;
 }
 
-#content {
-  float: left;
-  width: 75%;
+.card {
+  flex: 1 1 calc(75% - 40px);
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 aside {
-  float: right;
-  width: 25%;
-  padding-left: 20px;
+  flex: 1 1 calc(25% - 40px);
+  margin: 20px;
 }
 
-header {
-  display: inline;
-}
-
-@media screen and (max-width: 1000px) {
-  #content,
-  aside {
-    width: 100%;
-    padding: 0;
-  }
+footer {
+  text-align: center;
+  background-color: #007799;
+  color: white;
+  padding: 20px;
 }
